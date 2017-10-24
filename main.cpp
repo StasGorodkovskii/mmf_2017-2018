@@ -1,4 +1,4 @@
-#iclnude<iostream>
+#include<iostream>
 #include<locale>
 using namespace std;
 
@@ -8,7 +8,7 @@ int main()
 	setlocale(LC_ALL, "rus");
 	long long n, n1=0, copy_n;
 	unsigned int k = 0;
-	cout << "Ââåäèòå ÷èñëî: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®: ";
 	cin >> n;
 	copy_n = n;
 	while (copy_n)
@@ -29,9 +29,9 @@ int main()
 		copy_n /= 10;
 	}
 	if (n == n1)
-		cout << "×èñëî ñèììåòðè÷íî" << endl;
+		cout << "Ã—Ã¨Ã±Ã«Ã® Ã±Ã¨Ã¬Ã¬Ã¥Ã²Ã°Ã¨Ã·Ã­Ã®" << endl;
 	else
-		cout << "×èñëî íå ñèììåòðè÷íî" << endl;
+		cout << "Ã—Ã¨Ã±Ã«Ã® Ã­Ã¥ Ã±Ã¨Ã¬Ã¬Ã¥Ã²Ã°Ã¨Ã·Ã­Ã®" << endl;
 	system("pause");
 	return 0;
 
