@@ -8,7 +8,7 @@ int main()
 	setlocale(LC_ALL, "rus");
 	long long n, n1=0, copy_n;
 	unsigned int k = 0;
-	cout << "Ââåäèòå ÷èñëî: ";
+	cout << "Введите число: ";
 	cin >> n;
 	copy_n = n;
 	while (copy_n)
@@ -29,9 +29,9 @@ int main()
 		copy_n /= 10;
 	}
 	if (n == n1)
-		cout << "×èñëî ñèììåòðè÷íî" << endl;
+		cout << "Число симметрично" << endl;
 	else
-		cout << "×èñëî íå ñèììåòðè÷íî" << endl;
+		cout << "Число не симметрично" << endl;
 	system("pause");
 	return 0;
 
