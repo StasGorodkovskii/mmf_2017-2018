@@ -48,7 +48,7 @@ int main()
 				max = count;
 				numeral = t;
 			}
-			count = 1;
+			
 		}
 	}
 
