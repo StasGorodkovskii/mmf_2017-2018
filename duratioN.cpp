@@ -42,14 +42,14 @@ int main()
 			++count;
 		}
 		else 
-		{
+		
 			if (count > max) 
 			{
 				max = count;
 				numeral = t;
 			}
-			count = 1;
-		}
+			
+		
 	}
 
 	cout << endl;
