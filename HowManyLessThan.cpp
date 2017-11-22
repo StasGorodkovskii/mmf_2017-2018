@@ -2,10 +2,10 @@
 using namespace std;
 
 const size_t SIZE = 9;
-void bubbleSort(int*, size_t);
-void initArray(int*, size_t);
-void printArray(int*, size_t);
-size_t howManyLessThan(int*, size_t);
+void initArray(int[], size_t);
+void bubbleSort(int[], size_t);
+size_t howManyLessThen(int[], size_t);
+void printArray(int[], size_t);
 
 //int main()
 //{
@@ -23,7 +23,7 @@ size_t howManyLessThan(int*, size_t);
 //	return 0;
 //}
 //
-//void bubbleSort(int* a, size_t n)
+//void bubbleSort(int a[], size_t n)
 //{
 //	int buffer{};
 //	for (int i = n - 1; i > 0; --i)
@@ -37,19 +37,19 @@ size_t howManyLessThan(int*, size_t);
 //			}
 //		}
 //}
-//void initArray(int* a, size_t n)
+//void initArray(int a[], size_t n)
 //{
 //	cout << "Enter " << n << " integer numbers: ";
 //	for (size_t i = 0; i < n; ++i)
 //		cin >> a[i];
 //}
-//void printArray(int* a, size_t n)
+//void printArray(int a[], size_t n)
 //{
 //	for (size_t i = 0; i < n; ++i)
 //		cout << a[i] << " ";
 //	cout << endl;
 //}
-//size_t howManyLessThan(int* a, size_t n)
+//size_t howManyLessThan(int a[], size_t n)
 //{
 //	float number{};
 //	size_t counter{}, i{};
