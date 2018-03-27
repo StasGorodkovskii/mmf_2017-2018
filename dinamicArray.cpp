@@ -8,8 +8,8 @@ using namespace std;
 
 
 double sinTaylor(double, double);
-double** createMatrix(double(*)(double, double)//указатель на функцию sinTaylor//)  .....(возможно, нужно поставить указатель или даже два)
-	double createElementForMatrix(double(*)(double,double)); // функция, создающая элементы матрицы
+double** createMatrix(double(*)(double, double)//ГіГЄГ Г§Г ГІГҐГ«Гј Г­Г  ГґГіГ­ГЄГ¶ГЁГѕ sinTaylor//)  .....(ГўГ®Г§Г¬Г®Г¦Г­Г®, Г­ГіГ¦Г­Г® ГЇГ®Г±ГІГ ГўГЁГІГј ГіГЄГ Г§Г ГІГҐГ«Гј ГЁГ«ГЁ Г¤Г Г¦ГҐ Г¤ГўГ )
+	double createElementForMatrix(double(*)(double,double)); // ГґГіГ­ГЄГ¶ГЁГї, Г±Г®Г§Г¤Г ГѕГ№Г Гї ГЅГ«ГҐГ¬ГҐГ­ГІГ» Г¬Г ГІГ°ГЁГ¶Г»
 int main()
 {
      int dimention;
@@ -22,12 +22,12 @@ int main()
 
 
 
-	 matrix = createMatrix(dimention, sinTaylor, eps) // функция, создающая матрицу, состоящую из sinTaylor; ( параметрами будут : eps,dimention, нужно задать функцию как параметр, т.е - указатель на функцию
+	 matrix = createMatrix(dimention, sinTaylor, eps) // ГґГіГ­ГЄГ¶ГЁГї, Г±Г®Г§Г¤Г ГѕГ№Г Гї Г¬Г ГІГ°ГЁГ¶Гі, Г±Г®Г±ГІГ®ГїГ№ГіГѕ ГЁГ§ sinTaylor; ( ГЇГ Г°Г Г¬ГҐГІГ°Г Г¬ГЁ ГЎГіГ¤ГіГІ : eps,dimention, Г­ГіГ¦Г­Г® Г§Г Г¤Г ГІГј ГґГіГ­ГЄГ¶ГЁГѕ ГЄГ ГЄ ГЇГ Г°Г Г¬ГҐГІГ°, ГІ.ГҐ - ГіГЄГ Г§Г ГІГҐГ«Гј Г­Г  ГґГіГ­ГЄГ¶ГЁГѕ
 
 
 		 for (size_t i = 0; i < dimention; ++i)
 		 {
-			 for (size_t j = 0; j < dimention; ++j)// так как матрица квадратная
+			 for (size_t j = 0; j < dimention; ++j)// ГІГ ГЄ ГЄГ ГЄ Г¬Г ГІГ°ГЁГ¶Г  ГЄГўГ Г¤Г°Г ГІГ­Г Гї
 			 {
 				 cout  << matrix[i][j];
 
@@ -45,7 +45,6 @@ double sinTaylor(double x, double eps)
 
 	double prev, next, summ;
 	size_t k = 0;
-	x = fmod(x, 2 * 3.14159265358979323846)// sin - переодическая функция с периодом 2п. Для больших значений может переполнится память
 	summ = prev = x;
 	next = prev * (-1)*pow(x, 2) / ((2 * k + 2)*(2 * k + 3));
 	while (abs(next) >= eps)
