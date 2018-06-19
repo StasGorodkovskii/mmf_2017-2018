@@ -24,7 +24,7 @@ public:
 		houseNumber = houseNumber0;
 		flatNumber = flatNumber0;
 		//N = n0;
-		street[N] = '/0';
+		//street[N] = '/0';
 	}
 
 
